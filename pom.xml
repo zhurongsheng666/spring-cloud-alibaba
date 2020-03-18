@@ -11,6 +11,7 @@
         <module>provider</module>
         <module>provider-slave</module>
         <module>customer</module>
+        <module>nacos-conifg</module>
     </modules>
     <packaging>pom</packaging>
 
