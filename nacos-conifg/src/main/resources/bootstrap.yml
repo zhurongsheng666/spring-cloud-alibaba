@@ -1,0 +1,15 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.39:8848
+      config:
+        server-addr: 192.168.0.39:8848
+        file-extension: yaml
+        group: RELEASE_GROUP
+        namespace: d80dba5a-7b51-4166-b1d5-fee5e12b6396
