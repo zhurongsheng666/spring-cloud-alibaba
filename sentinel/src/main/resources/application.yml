@@ -1,9 +1,8 @@
 server:
-  port: 9002
-
+  port: 9004
 spring:
   application:
-    name: customer
+    name: sentinel
   cloud:
     nacos:
       discovery:
@@ -16,3 +15,10 @@ spring:
         #客户端IP
         client-ip: 192.168.0.100
 
+
+#暴露自己的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

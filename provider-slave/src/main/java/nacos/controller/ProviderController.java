@@ -19,7 +19,6 @@ public class ProviderController {
 
     @GetMapping("/hello")
     public String hello(){
-
         return "Hello nacos , server port is "+port;
     }
 }
