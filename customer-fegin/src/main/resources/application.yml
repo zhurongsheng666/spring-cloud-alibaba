@@ -1,0 +1,29 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: customer-fegin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.39:8848
+    sentinel:
+      transport:
+        dashboard: 192.168.0.39:8080
+        port: 8719
+        client-ip: 192.168.0.100
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 192.168.0.39:8848
+            dataId: customer-fegin
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+
+#开启sentinel 对fegin的支持
+feign:
+  sentinel:
+    enabled: true
