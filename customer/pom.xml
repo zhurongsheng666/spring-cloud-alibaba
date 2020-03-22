@@ -15,7 +15,7 @@
     <dependencies>
         <!--sentinel nacos-->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
+            <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
         <!--sentinel-->

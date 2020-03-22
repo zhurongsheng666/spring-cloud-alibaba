@@ -6,4 +6,9 @@
 
 # 2 Sentinel-release-v1.0       
 (1) sentinel 端口：9004         
-(2) customer-fegin 端口: 9005                                                    
+(2) customer-fegin 端口: 9005                
+
+# 3 Seata-release-v1.0
+(1) order 端口: 9006                                 
+(2) storage 端口: 9007                                                   
+(3) account 端口: 9008                              

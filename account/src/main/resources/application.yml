@@ -1,0 +1,23 @@
+server:
+  port: 9008
+
+spring:
+  application:
+    name: account
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: zrs_tx_group
+    nacos:
+      discovery:
+        server-addr: 192.168.0.39:8848
+  datasource:
+    url: jdbc:mysql://192.168.0.38:3306/db_account?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+feign:
+  hystrix:
+    enabled: true
